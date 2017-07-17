@@ -5,7 +5,7 @@ Shell script to import gtfs.txt files to mysql database
 - Create a mysql database if it doesn't exist already  
 `mysql -u (my_db_username) -p -e 'CREATE DATABASE (my_db_name)'`
 - Add gtfs .txt files in gtfs folder  
-- Run the script:
+- Run the script:  
 `sh import-gtfs-mysql.sh`
 - When prompted enter database name, username, and password
 
