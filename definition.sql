@@ -72,7 +72,7 @@ CREATE TABLE `shapes` (
 
 DROP TABLE IF EXISTS `stop_times`;
 CREATE TABLE `stop_times` (
-  `trip_id` int(11) DEFAULT NULL,
+  `trip_id` varchar(20) DEFAULT NULL,
   `arrival_time` varchar(8) DEFAULT NULL,
   `departure_time` varchar(8) DEFAULT NULL,
   `stop_id` int(11) DEFAULT NULL,
@@ -97,7 +97,7 @@ DROP TABLE IF EXISTS `trips`;
 CREATE TABLE `trips` (
   `route_id` int(11) DEFAULT NULL,
   `service_id` int(11) DEFAULT NULL,
-  `trip_id` int(11) PRIMARY KEY,
+  `trip_id` varchar(20) PRIMARY KEY,
   `trip_headsign` varchar(225) DEFAULT NULL,
   `trip_short_name` varchar(80) DEFAULT NULL,
   `direction_id` int(11) DEFAULT NULL,
