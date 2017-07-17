@@ -99,7 +99,6 @@ CREATE TABLE `trips` (
   `service_id` int(11) DEFAULT NULL,
   `trip_id` varchar(20) PRIMARY KEY,
   `trip_headsign` varchar(225) DEFAULT NULL,
-  `trip_short_name` varchar(80) DEFAULT NULL,
   `direction_id` int(11) DEFAULT NULL,
   `block_id` int(11) DEFAULT NULL,
   `shape_id` int(11) DEFAULT NULL
